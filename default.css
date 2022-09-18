@@ -385,10 +385,10 @@ h6 {
 }
 
 .project-image {
-  padding-top: 80px;
-  padding-right: 10px;
-  height: 60%;
-  width: 60%;
+  padding-top: 30px;
+  padding-left: 50px;
+  height: 80%;
+  width: 80%;
 }
 #contact-form {
   display: block;
