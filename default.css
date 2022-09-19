@@ -385,8 +385,9 @@ h6 {
 }
 
 .project-image {
-  padding-top: 30px;
-  padding-left: 50px;
+  padding-top: 7%;
+  padding-left: 10%;
+  padding-bottom: 8%;
   height: 80%;
   width: 80%;
 }
@@ -419,6 +420,10 @@ h6 {
   border: 1px solid var(--borderColor);
   font-size: 14px;
 }
+/* disables resize function*/
+textarea {
+  resize: none;
+}
 
 #submit-btn {
   margin-top: 10px;
@@ -428,6 +433,12 @@ h6 {
   color: #fff;
   background-color: var(--buttonColor);
   border: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+#submit-btn:hover {
+  cursor: pointer;
+  background-color: #0011ad;
 }
 
 @media screen and (max-width: 1200px) {
@@ -510,13 +521,13 @@ header {
 }
 
 .nav__links li a:hover {
-  color: #0088a9;
+  color: #def882;
 }
 
 .cta {
   margin-left: 20px;
   padding: 3px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: rgb(0, 169, 51);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -524,7 +535,7 @@ header {
 }
 
 .cta:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: rgba(169, 0, 48, 0.8);
 }
 
 /* Mobile Nav */
@@ -610,15 +621,15 @@ header {
   background-color: #e8e8e8;
   border: none;
   border-radius: 10px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 9px rgb(163, 137, 248);
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 1000;
 }
 
-.button:hover {background-color: #0088a9}
+.button:hover {background-color: #94b3e8}
 
 .button:active {
-  background-color: #0088a9;
-  box-shadow: 0 5px #666;
+  background-color: #1a6679;
+  box-shadow: 0 5px rgb(239, 175, 25);
   transform: translateY(4px);
 }
