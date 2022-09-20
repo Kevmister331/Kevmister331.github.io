@@ -40,7 +40,6 @@ strong {
 
 p,
 li,
-span,
 label,
 input,
 textarea {
@@ -232,6 +231,11 @@ h6 {
   font-size: 12px;
   font-style: italic;
   text-align: center;
+}
+
+span {
+  color: #000052
+
 }
 
 .right-column {

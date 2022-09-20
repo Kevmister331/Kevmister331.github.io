@@ -39,9 +39,19 @@
         <section class="s1">
             <div class="main-container">
                 <div class="greeting-wrapper">
-                    <h1>Hello World, I'm Kevin Hu</h1>
+                    <h1>Hello! I'm <span class="auto-type"></span></h1>
                 </div>
-
+                <div>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                <script>
+                    var typed = new Typed(".auto-type", {
+                        strings: ["Kevin Hu.", "an Aspiring Developer!", "happy that you're here!"],
+                        typeSpeed: 160,
+                        backSpeed: 75,
+                        loop: true
+                    })
+                </script>
+                </div>
                 <div class="intro-wrapper">
                     <div class="nav-wrapper">
 						<div class="dots-wrapper">
