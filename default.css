@@ -234,7 +234,7 @@ h6 {
 }
 
 span {
-  color: #000052
+  color: #f1b100
 
 }
 
@@ -392,9 +392,17 @@ span {
   padding-top: 7%;
   padding-left: 10%;
   padding-bottom: 8%;
-  height: 80%;
+  height: auto;
   width: 80%;
 }
+.project-image-duck {
+  padding-top: 7%;
+  padding-left: 23%;
+  padding-bottom: 8%;
+  height: auto;
+  width: 60%;
+}
+
 #contact-form {
   display: block;
   max-width: 600px;
