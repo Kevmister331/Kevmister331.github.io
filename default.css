@@ -60,6 +60,7 @@ ul {
 h1 {
   font-size: 56px;
 }
+
 h2 {
   font-size: 36px;
 }
@@ -394,6 +395,7 @@ span {
   padding-bottom: 8%;
   height: auto;
   width: 80%;
+
 }
 .project-image-duck {
   padding-top: 7%;
@@ -645,3 +647,4 @@ header {
   box-shadow: 0 5px rgb(239, 175, 25);
   transform: translateY(4px);
 }
+
