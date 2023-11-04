@@ -9,8 +9,6 @@ import { pdf } from '../images/Public Resume.pdf';
 
 
 
-
-
 export default function Home() {
   const [theme, setTheme] = React.useState('light');
 
