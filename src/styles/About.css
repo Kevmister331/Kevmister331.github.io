@@ -1,0 +1,79 @@
+/* General Styles */
+html {
+    font-size: 1.1rem; /* Set default font size */
+}
+
+.page {
+    display: flex;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.leftPanel, .rightPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.leftPanel {
+    flex: 1;
+    align-items: center;
+    padding: 4rem 2rem 2rem;
+    margin-left: 5rem;
+}
+
+.rightPanel {
+    flex: 2;
+    max-width: 80%;
+    padding-top: 3rem;
+    padding-right: 8vw;
+    padding-left: 5rem;
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 400px; /* You can adjust based on your needs */
+    border-radius: 15%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.iconList {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icon {
+    cursor: pointer;
+    transition: transform 0.2s; /* Hover effect */
+}
+
+.icon a {
+    color: black;
+  }
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.title {
+    font-size: 2.4rem;
+    border-bottom: 0.125rem solid black;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.otherStuff {
+    font-size: 1.4rem; 
+}
+
+.otherStuff ul {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.otherStuff li {
+    list-style-type: disc;
+}

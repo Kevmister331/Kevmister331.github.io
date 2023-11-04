@@ -1,0 +1,19 @@
+.blogPostContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 10rem;
+}
+
+.blogPostTitle {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #B95117;
+}
+
+.blogPostContent {
+    font-size: 18px;
+    padding-top: 5rem;
+    line-height: 1.6;
+    color: #555;
+}
