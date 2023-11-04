@@ -43,9 +43,9 @@ header {
 
 .vertical-line {
   margin-left: 0rem;
-  width: 32rem;
+  width: 34rem;
   height: 1px;
-  background-color:black;
+  background-color:var(--text-color);
   margin-top: 20px; /* Adjust this value based on how much you want to move the line down */
 }
 
@@ -100,7 +100,7 @@ header {
 .icon-column > * {
   margin: 10px 0; /* Adjust as needed */
   font-size: 3rem; /* Adjust icon size as needed */
-  color: black;
+  color: var(--text-color);
 }
 
 .photo-section {
@@ -140,12 +140,12 @@ nav li {
 }
 
 nav a {
-  color: #333;
+  color: var(--text-color);
   font-size: 1.2em;
 }
 
 nav a:hover {
-  color: #B95117;
+  color: var(--link-hover-color);
 }
 
 .photo {
@@ -160,7 +160,7 @@ nav a:hover {
 .vertical-line2 {
   width: 66rem;
   height: 1px;
-  background-color:black;
+  background-color: var(--text-color);
   margin-top: 20px; /* Adjust this value based on how much you want to move the line down */
 }
 
@@ -179,9 +179,107 @@ nav a:hover {
 }
 
 .icon a {
-  color: black;
+  color: var(--text-color);
 }
 
 .icon:hover {
   transform: scale(1.1);
 }
+
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #0000ee;
+  --link-hover-color: #B95117;
+}
+
+/* Dark theme */
+.dark-theme {
+  --background-color: #16213E;
+  --text-color: #EAB9C9;
+  --link-color: #A5D7E8;
+  --link-hover-color: #A5D7E8;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
+
+/* Position the theme toggle to the right */
+.theme-switch-wrapper {
+  position: absolute;
+  right: 5rem; /* 10px from the right edge */
+  top: 3rem; /* 10px from the top edge */
+}
+
+
+/* Modify .switch class to remove any unwanted margin */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px; 
+  height: 34px; 
+  margin: 0; /* No extra margin */
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Grey background by default */
+  transition: .4s;
+  border-radius: 34px; /* Round edges */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px; /* Diameter of the slider */
+  width: 26px; /* Diameter of the slider */
+  left: 4px;
+  bottom: 4px;
+  background-color: white; /* White slider knob by default */
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4b1ccd; /* Blue background when checked */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px); /* Move the slider to the right when checked */
+}
+
+/* Focus styles */
+.switch input:focus + .slider {
+  box-shadow: none; /* No box shadow */
+}
+
+/* Rounded sliders for both the container and the knob */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+

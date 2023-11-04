@@ -17,8 +17,20 @@ import quack2 from '../images/quack2.png';
 
 function TabbedInterface() {
   const [selectedTab, setSelectedTab] = useState('This Website');
+  const [theme, setTheme] = React.useState('light');
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
+  React.useEffect(() => {
+    document.body.className = theme === 'dark' ? 'dark-theme' : '';
+  }, [theme]);
 
   const renderContent = () => {
+    <button onClick={toggleTheme} className="theme-toggle">
+        Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
+      </button>
     switch (selectedTab) {
       case 'This Website':
         return (

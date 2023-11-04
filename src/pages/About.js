@@ -2,11 +2,35 @@ import React from 'react';
 import '../styles/About.css';
 import kevinhorizontal from '../images/kevinhuhorizontal.jpg';
 import {AiFillLinkedin, AiFillGithub, AiOutlineMail} from "react-icons/ai";
+import {IoIosArrowRoundBack} from "react-icons/io";
 
 
 function AboutMe() {
+    const [theme, setTheme] = React.useState('light');
+
+    const toggleTheme = () => {
+      setTheme(theme === 'light' ? 'dark' : 'light');
+    };
+  
+    React.useEffect(() => {
+      document.body.className = theme === 'dark' ? 'dark-theme' : '';
+    }, [theme]);
+    
     return (
         <div className="page">
+            <button onClick={() => window.history.back()} className="icon-button">
+                <IoIosArrowRoundBack size={50}/>
+            </button>
+            <div className="theme-switch-wrapper">
+                <label className="switch">
+                <input 
+                    type="checkbox" 
+                    onChange={toggleTheme} 
+                    checked={theme === 'dark'} 
+                />
+                <span className="slider round"></span>
+                </label>
+            </div>
             <div className="leftPanel">
                 <div>
                     <img src={kevinhorizontal} alt="Kevin" className="profile-pic"/>

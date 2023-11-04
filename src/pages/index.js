@@ -1,19 +1,40 @@
 import * as React from "react"
 import '../styles/App.css';
 import kevramosImg from '../images/kevramos2.png';
-import {AiFillLinkedin, AiFillGithub, AiOutlineMail} from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiOutlineMail, AiFillHome, AiOutlineArrowLeft } from "react-icons/ai";
 import TabbedInterface from './TabbedInterface';
 import { Link } from 'gatsby';
 import { Typewriter } from 'react-simple-typewriter'
-
+import { pdf } from '../images/Public Resume.pdf';
 
 
 
 
 
 export default function Home() {
+  const [theme, setTheme] = React.useState('light');
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
+  React.useEffect(() => {
+    document.body.className = theme === 'dark' ? 'dark-theme' : '';
+  }, [theme]);
+
   return (
     <div className="container">
+       <div className="theme-switch-wrapper">
+        <label className="switch">
+          <input 
+            type="checkbox" 
+            onChange={toggleTheme} 
+            checked={theme === 'dark'} 
+          />
+          <span className="slider round"></span>
+        </label>
+      </div>
+
       <header>
         <div className="header-left">
           <p>Hi, I'm</p>
@@ -21,7 +42,7 @@ export default function Home() {
         </div>
         <div className="header-right">
           <p>Software Engineer Intern @ ATPCO</p>
-          <span style={{ color: '#B95117'}}>
+          <span style={{ color: 'var(--link-hover-color)'}}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
             className="typewriter-text"
@@ -46,7 +67,8 @@ export default function Home() {
             <ul>
               <li><Link to="/About">About Me</Link></li>
               <li><Link to="/Blog">Blog [work in progress]</Link></li>
-              <li><a>Resume</a></li>
+              <li><a href = {pdf} target = "_blank">Resume</a></li>
+              
           </ul>
           </nav>
         </div>
