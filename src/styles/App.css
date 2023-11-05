@@ -281,5 +281,102 @@ input:checked + .slider:before {
 }
 
 
+/* Mobile styles */
+@media (max-width: 768px) {
+
+  /* Adjust the container padding for mobile */
+  .container {
+    padding: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    text-align: center;
+  }
+
+  .header-left,
+  .header-right {
+    flex: 0 0 100%;
+    padding: 10px 0;
+  }
+
+  /* Reduce the font size on mobile for the header */
+  .header-left {
+    font-size: 3rem;
+  }
+  
+  .header-right {
+    font-size: 1.5rem;
+    padding-left: 0;
+  }
+
+  /* Stack the content vertically on mobile */
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-section {
+    width: 100%; /* Full width */
+    padding-right: 0;
+    margin-bottom: 20px; /* Add some space below the nav */
+  }
+
+  .icon-column {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .photo-section {
+    padding: 0;
+  }
+
+  /* Adjust the photo size on mobile */
+  .photo img {
+    max-width: 100%;
+    width: auto; /* make the image full width */
+  }
+
+  /* Hide the vertical lines on mobile */
+  .vertical-line,
+  .vertical-line2 {
+    display: none;
+  }
+
+  /* Make projects take the full width */
+  .projects {
+    width: 100%;
+  }
+
+  /* Adjust project styles for mobile */
+  .project {
+    padding: 10px;
+  }
+
+  /* Adjust icon sizes for smaller screens */
+  .icon-column > * {
+    font-size: 2rem;
+  }
+
+  /* Adjust header font sizes */
+  h1 {
+    font-size: 2em;
+  }
+
+  /* Adjust navigation font sizes */
+  nav a {
+    font-size: 1em;
+  }
+
+  /* Theme switcher position on mobile */
+  .theme-switch-wrapper {
+    right: 1rem; /* Closer to the edge */
+    top: 1rem;
+  }
+}
+
 
 
