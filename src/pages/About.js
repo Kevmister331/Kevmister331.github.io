@@ -54,7 +54,6 @@ function AboutMe() {
                     </div>
                 </div>
 
-
                 <div className="otherStuff">
                 
                 </div>
