@@ -39,12 +39,12 @@ export default function Home() {
           <p>Kevin Hu</p>
         </div>
         <div className="header-right">
-          <p>Software Engineer Intern @ ATPCO</p>
+          <p>Computer Science + Business Student</p>
           <span style={{ color: 'var(--link-hover-color)'}}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
             className="typewriter-text"
-            words={['Full Stack Developer', 'Computer Science Student', 'Builder of Things', 'Creating Systems']}
+            words={['Full Stack Developer', 'Computer Science Student', 'Building Things', 'Creating Systems']}
             loop={false}
             cursor
             cursorStyle='|'
@@ -64,9 +64,7 @@ export default function Home() {
           <nav>
             <ul>
               <li><Link to="/About">About Me</Link></li>
-              <li><Link to="/Blog">Blog [work in progress]</Link></li>
               <li><a href = {pdf} target = "_blank">Resume</a></li>
-              
           </ul>
           </nav>
         </div>
