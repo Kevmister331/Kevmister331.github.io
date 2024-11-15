@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/TabbedInterface.css';
+import '../styles/Projects.css';
 import databaseproject from '../images/databaseproject.png';
 import panini1 from '../images/panini1.png';
 import panini2 from '../images/panini2.png';
@@ -15,7 +15,7 @@ import quack1 from '../images/quack1.png';
 import quack2 from '../images/quack2.png';
 
 
-function TabbedInterface() {
+function Projects() {
   const [selectedTab, setSelectedTab] = useState('This Website');
   const [theme, setTheme] = React.useState('light');
 
@@ -201,4 +201,4 @@ function TabbedInterface() {
   );
 }
 
-export default TabbedInterface;
+export default Projects;

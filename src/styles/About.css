@@ -1,180 +1,163 @@
 /* General Styles */
 html {
-    font-size: 1.1rem; /* Set default font size */
+  font-size: 1.1rem; /* Set default font size */
 }
 
 .page {
-    display: flex;
-    padding: 2rem;
-    margin-top: 2rem;
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  padding: 2rem;
+  margin-top: 2rem;
+  justify-content: space-between; /* Distribute space */
 }
 
 .leftPanel, .rightPanel {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .leftPanel {
-    flex: 1;
-    align-items: center;
-    padding: 4rem 2rem 2rem;
-    margin-left: 5rem;
+  flex: 1;
+  width: 25%; /* Set left panel to take 1/4 of the screen */
+  padding: 2rem;
+  margin-right: 2rem; /* Adjust spacing */
+  align-items: center;
 }
 
 .rightPanel {
-    flex: 2;
-    max-width: 80%;
-    padding-top: 3rem;
-    padding-right: 8vw;
-    padding-left: 5rem;
+  flex: 3;
+  width: 70%; /* Right panel takes 3/4 of the screen */
+  padding-left: 2rem;
 }
 
 .profile-pic {
-    width: 100%;
-    max-width: 400px; /* You can adjust based on your needs */
-    border-radius: 15%;
-    object-fit: cover;
-    margin-bottom: 1rem;
+  width: 300px;       /* Set a fixed width */
+  height: 400px;      /* Set a fixed height */
+  object-fit: cover;  /* Ensures the image covers the area without stretching */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  margin-bottom: 20px;
+}
+
+/* Image Panel */
+.imagePanel {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  overflow: hidden;
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.arrow {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
 }
 
 .iconList {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
+  display: flex;
+  flex-direction: row; /* Align social media icons horizontally */
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .icon {
-    cursor: pointer;
-    transition: transform 0.2s; /* Hover effect */
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .icon a {
-    color: black;
-  }
+  color: black;
+}
 
 .icon:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .title {
-    font-size: 2.4rem;
-    border-bottom: 0.125rem solid var(--text-color);
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+  font-size: 2.4rem;
+  border-bottom: 0.125rem solid var(--text-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
-.otherStuff {
-    font-size: 1.4rem; 
-}
-
-.otherStuff ul {
-    padding-left: 1rem;
-    margin-top: 0.5rem;
-}
-
-.otherStuff li {
-    list-style-type: disc;
-}
-
-/* Ensure the .page container is relative for the button to position absolutely within it */
-.page {
-    position: relative;
-    /* rest of your styles... */
-}
-
-/* Styles for the back button */
-.icon-button {
-    background: none;
-    border: none;
-    color: var(--text-color);
-    padding-left: 2rem;
-    cursor: pointer;
-    position: absolute; /* Positioning it absolutely */
-    top: -4rem; /* Adjust the value as needed */
-    left: 1rem; /* Adjust the value as needed */
-    z-index: 10; /* Ensures the button is above other elements */
-}
-
-/* No padding around the icon */
-.icon-button svg {
-    display: block; /* Remove any extra space around the SVG */
-}
-
-/* Hover effect only for the icon */
-.icon-button:hover {
-    transform: scale(1.1);
-}
-
-
-/* Position the theme toggle to the right */
 .theme-switch-wrapper {
-    position: absolute;
-    right: 5rem; /* 10px from the right edge */
-    top: 3rem; /* 10px from the top edge */
-  }
-  
-  
-  /* Modify .switch class to remove any unwanted margin */
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px; 
-    height: 34px; 
-    margin: 0; /* No extra margin */
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc; /* Grey background by default */
-    transition: .4s;
-    border-radius: 34px; /* Round edges */
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px; /* Diameter of the slider */
-    width: 26px; /* Diameter of the slider */
-    left: 4px;
-    bottom: 4px;
-    background-color: white; /* White slider knob by default */
-    transition: .4s;
-    border-radius: 50%;
-  }
-  
-  input:checked + .slider {
-    background-color: #4b1ccd; /* Blue background when checked */
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(26px); /* Move the slider to the right when checked */
-  }
-  
-  /* Focus styles */
-  .switch input:focus + .slider {
-    box-shadow: none; /* No box shadow */
-  }
-  
-  /* Rounded sliders for both the container and the knob */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+/* Switch styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.dark-theme {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dark-theme .title {
+  color: #fff;
+}
+
+.dark-theme .icon a {
+  color: white;
+}

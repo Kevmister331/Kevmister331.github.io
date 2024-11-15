@@ -1,8 +1,9 @@
 import * as React from "react"
 import '../styles/App.css';
-import kevramosImg from '../images/kevramos2.png';
+import kevmain from '../images/kevmain.jpg';
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail, AiFillHome, AiOutlineArrowLeft } from "react-icons/ai";
-import TabbedInterface from './TabbedInterface';
+import Projects from './Projects';
+import Experience from './Experience';
 import { Link } from 'gatsby';
 import { Typewriter } from 'react-simple-typewriter'
 import { pdf } from '../images/Public Resume.pdf';
@@ -39,7 +40,7 @@ export default function Home() {
           <p>Kevin Hu</p>
         </div>
         <div className="header-right">
-          <p>Computer Science + Business Student</p>
+          <p>Seeking Summer 2025 Internship</p>
           <span style={{ color: 'var(--link-hover-color)'}}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
@@ -65,6 +66,7 @@ export default function Home() {
             <ul>
               <li><Link to="/About">About Me</Link></li>
               <li><a href = {pdf} target = "_blank">Resume</a></li>
+              <li><Link to="/About">Life Ideas</Link></li>
           </ul>
           </nav>
         </div>
@@ -89,20 +91,23 @@ export default function Home() {
 
         <div className="photo-section">
           <div className="photo">
-            <img src={kevramosImg} alt="Kevin and friend" />
+            <img src={kevmain} alt="Kevin Photo" />
           </div>
         </div>
       </section>
 
-
-      
       <section className="projects">
         <p style={{fontSize: '2rem'}}>Projects</p>
         <div className="vertical-line2"></div>
-
-        <TabbedInterface />
-        
+        <Projects />
       </section>
+
+      <section className="experience">
+        <p style={{fontSize: '2rem'}}>Experience</p>
+        <div className="vertical-line2"></div>
+        <Experience />
+      </section>
+
     </div>
   );
 }
