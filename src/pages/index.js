@@ -66,7 +66,7 @@ export default function Home() {
             <ul>
               <li><Link to="/About">About Me</Link></li>
               <li><a href = {pdf} target = "_blank">Resume</a></li>
-              <li><Link to="/About">Life Ideas</Link></li>
+              {/* <li><Link to="/About">Life Ideas</Link></li> */}
           </ul>
           </nav>
         </div>

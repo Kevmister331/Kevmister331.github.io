@@ -1,68 +1,66 @@
 /* General container for the experience section */
 .experience-section {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    color: #333; /* Dark gray for text */
-  }
-  
-  /* Header styling for the experience item */
-  .experience-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    color: #000;
-  }
-  
-  /* Experience title and company info styling */
-  .experience-item h3 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #000;
-  }
-  
-  .company-name {
-    font-style: italic;
-    color: #555; /* Slightly lighter gray for company name */
-    font-size: 0.95rem;
-  }
-  
-  .duration {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Description text styling */
-  .description {
-    margin-top: 1rem;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #444; /* Dark gray for readability */
-  }
-  
-  /* Company logo styling */
-  .company-logo {
-    max-width: 150px;
-    height: auto;
-    float: right;
-    margin-top: -60px; /* Adjust the logo's vertical positioning */
-    margin-left: 20px; /* Space between logo and text */
-  }
-  
-  /* Individual experience item styling */
-  .experience-item {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background-color: #fff; /* White background */
-    border: 1px solid #e0e0e0; /* Light gray border for separation */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  }
-  
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #333;
+}
+
+/* Experience item styling with padding */
+.experience-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Added padding for better spacing */
+}
+
+/* Header styling for the experience item */
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Experience title and company info styling */
+.experience-item h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.company-name {
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.duration {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Description text styling */
+.description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Company logo styling */
+.company-logo {
+  max-width: 150px;
+  height: auto;
+  margin-left: 20px; /* Adjusted space between logo and text */
+}
