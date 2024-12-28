@@ -325,10 +325,13 @@ input:checked + .slider:before {
   }
 
   .icon-column {
-    flex-direction: row;
+    display: flex;
+    flex-direction: row; /* Make icons horizontal on mobile */
     justify-content: center;
-    padding: 0;
-  }
+    align-items: center;
+    gap: 1rem; /* Adjust this value for desired spacing */
+    padding: 1rem 0; /* Add top and bottom padding */
+}
 
   .photo-section {
     padding: 0;

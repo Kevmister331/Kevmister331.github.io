@@ -1,66 +1,112 @@
-/* General container for the experience section */
+/* Light Mode (default) */
+:root {
+    --bg-color: #fff;
+    --text-color: #333;
+    --card-bg-color: #fff;
+    --card-border-color: #e0e0e0;
+    --card-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme {
+    --bg-color: #181818;
+    --text-color: #e4e4e4;
+    --card-bg-color: #181818;
+    --card-border-color: #f1dee5;
+    --card-shadow-color: rgba(255, 255, 255, 0.05);
+}
+
 .experience-section {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  color: #333;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: var(--text-color);
 }
 
-/* Experience item styling with padding */
 .experience-item {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px; /* Added padding for better spacing */
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--card-shadow-color);
 }
 
-/* Header styling for the experience item */
 .experience-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between; /* Maintain space between on larger screens */
+    align-items: center;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-  color: #000;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
 }
 
-/* Experience title and company info styling */
 .experience-item h3 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #000;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    background: none;
+}
+
+.text-container {
+    flex: 1;
 }
 
 .company-name {
-  font-style: italic;
-  color: #555;
-  font-size: 0.95rem;
+    font-style: italic;
+    color: var(--text-color);
+    font-size: 0.95rem;
 }
 
 .duration {
-  font-weight: bold;
-  color: #333;
+    font-weight: bold;
+    color: var(--text-color);
 }
 
-/* Description text styling */
 .description {
-  margin-top: 1rem;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #444;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
 }
 
-/* Company logo styling */
 .company-logo {
-  max-width: 150px;
-  height: auto;
-  margin-left: 20px; /* Adjusted space between logo and text */
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo { /* This seems redundant, consider removing */
+    width: 100px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .experience-header {
+        display: block; /* Stack elements vertically */
+        text-align: center; /* Center content horizontally */
+    }
+
+    .text-container {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .company-logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+        height: auto;
+    }
+    .experience-item{
+        display: block;
+    }
+
+    
 }

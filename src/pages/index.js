@@ -45,7 +45,7 @@ export default function Home() {
           {/* Style will be inherited from the parent element */}
           <Typewriter
             className="typewriter-text"
-            words={['Full Stack Developer', 'Computer Science Student', 'Building Things', 'Creating Systems']}
+            words={['Full Stack Developer', 'CS + Business Major', 'Digital Alchemist', 'Tomorrow\'s Builder']}
             loop={false}
             cursor
             cursorStyle='|'
@@ -105,7 +105,7 @@ export default function Home() {
       <section className="experience">
         <p style={{fontSize: '2rem'}}>Experience</p>
         <div className="vertical-line2"></div>
-        <Experience />
+        <Experience theme={theme} />
       </section>
 
     </div>

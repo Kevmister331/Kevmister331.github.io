@@ -1,18 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap');
+
+/* General Styles */
+html {
+    font-size: 1.1rem;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    margin-top: 5rem;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 1200px;
+    margin: 5rem auto 0;
+}
+
+.leftPanel,
+.rightPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.leftPanel {
+    flex: 1;
+    width: 30%;
+    padding: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 0;
+    max-width: 350px;
+}
+
+.rightPanel {
+    flex: 2;
+    width: 65%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.imagePanel {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+
+.iconList {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon a {
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2.4rem;
+    border-bottom: 0.125rem solid var(--text-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Theme Styles */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #0000ee;
+    --link-hover-color: #B95117;
+    --background-hover: #f4e8c9;
+}
+
+.dark-theme {
+    --background-color: #1a1a1a;
+    --text-color: #f1dee5;
+    --link-color: #A5D7E8;
+    --link-hover-color: #A5D7E8;
+    --background-hover: #e5b0e4;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: var(--link-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    font-family: 'Fira Code', monospace;
+}
+
+.theme-toggle:hover {
+    background-color: var(--link-hover-color);
+}
+
+/* Project Styles (with Responsiveness) */
 .tabbed-interface {
     display: flex;
     margin-bottom: 2rem;
-  }
-  
-  .tabs {
+}
+
+.tabs {
     width: 10rem;
     flex-direction: column;
     border-right: 1px solid var(--text-color);
-  }
-  
-  .tabs > div {
-    width: 10rem; /* This will set a consistent width for each tab */
-    flex-grow: 0; /* This ensures the tab doesn't grow beyond its set width */
-    flex-shrink: 0; /* This ensures the tab doesn't shrink below its set width */
+}
+
+.tabs > div {
+    width: 10rem;
+    flex-grow: 0;
+    flex-shrink: 0;
     padding: 10px;
     cursor: pointer;
     background-color: var(--background-color);
@@ -20,19 +194,17 @@
     border-right: 1px solid var(--text-color);
 }
 
-  .tabs > div.active-tab {
+.tabs > div.active-tab {
     font-weight: bold;
     background-color: var(--background-hover);
-  }
-  
-  
+}
 
 .text-image-container {
     padding-top: 2rem;
     display: flex;
     align-items: flex-start;
     padding-left: 2rem;
-    height: 22rem; 
+    height: 22rem;
     overflow-y: auto;
 }
 
@@ -45,20 +217,20 @@
     gap: 2.5rem;
 }
 
-
 .text-content {
-    flex: 2; /* Adjusts the width taken by the text content relative to the image */
-    padding-right: 1rem; /* Spacing between text and image */
+    flex: 2;
+    padding-right: 1rem;
 }
 
 .text-content h2 {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem; /* Adjust as needed */
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
 }
 
 .brief-description {
     font-style: italic;
-    margin-bottom: 1rem; /* Adjust as needed */
+    margin-bottom: 1rem;
 }
 
 .text-content p {
@@ -67,14 +239,14 @@
 }
 
 .tech-stack {
-    margin-top: 1rem; /* Adjust as needed */
+    margin-top: 1rem;
     list-style-type: none;
     padding: 0;
 }
 
 .tech-stack li {
     display: inline-block;
-    margin-right: 1rem; /* Spacing between tech stack items */
+    margin-right: 1rem;
     background-color: var(--background-hover);
     padding: 0.2rem 0.5rem;
     border-radius: 5px;
@@ -82,11 +254,11 @@
 
 .text-image-container img {
     flex: 1;
-    width: 16rem; /* Fixed width */
-    height: 16rem; /* Fixed height */
+    width: 16rem;
+    height: 16rem;
     align-self: center;
     border: 1px solid var(--text-color);
-    object-fit: cover; /* This will maintain the aspect ratio and resize the image to cover the dimensions without distortion */
+    object-fit: cover;
 }
 
 .panda-path-images img {
@@ -94,51 +266,158 @@
     height: 12rem;
 }
 
-:root {
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --link-color: #0000ee;
-    --link-hover-color: #B95117;
-    --background-hover: #f4e8c9;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .page {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .leftPanel {
+        width: 100%;
+        max-width: 400px;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        justify-content: flex-start;
+    }
+
+    .rightPanel {
+        width: 100%;
+        padding: 1rem;
+        padding-right: 1rem;
+    }
+
+    .iconList {
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    .profile-pic {
+      width: 100%;
+      height: auto;
   }
-  
-  /* Dark theme */
-  .dark-theme {
-    --background-color: #16213E;
-    --text-color: #f1dee5;
-    --link-color: #A5D7E8;
-    --link-hover-color: #A5D7E8;
-    --background-hover: #7450b1;
+
+  /* Project Styles Mobile */
+  .tabbed-interface {
+      flex-direction: column;
   }
-  
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
+
+  .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
   }
-  
-  a {
-    color: var(--link-color);
+
+  .tech-stack li {
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
   }
-  
-  a:hover {
-    color: var(--link-hover-color);
+
+  .tabs {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid var(--text-color);
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
   }
-  
-  /* Button to toggle between themes */
-  .theme-toggle {
-    position: fixed; /* Fixed at the top */
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
-    padding: 10px 20px;
-    background-color: var(--link-color);
-    color: var(--text-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 1000; /* Make sure it's above other elements */
-    font-family: 'Fira Code', monospace;
+
+  .tabs > div {
+      width: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+      border-right: none;
+      border-bottom: none;
+      border-left: 1px solid var(--text-color);
+      border-top: 1px solid var(--text-color);
+      text-align: center;
+      padding: 10px;
+      white-space: nowrap;
   }
-  
-  .theme-toggle:hover {
-    background-color: var(--link-hover-color);
+  .tabs > div:first-child{
+      border-left: none;
   }
+
+  .text-image-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      height: auto;
+      overflow-y: auto; /* Enable scrollbar on mobile */
+  }
+  .image-stack{
+      flex-direction: row;
+      overflow-x: auto;
+  }
+
+  /* Mobile Scrollbar Styles */
+  .text-image-container::-webkit-scrollbar, .image-stack::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+  }
+
+  .text-image-container::-webkit-scrollbar-track, .image-stack::-webkit-scrollbar-track {
+      background: transparent;
+  }
+
+  .text-image-container::-webkit-scrollbar-thumb, .image-stack::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+  }
+
+  .text-image-container::-webkit-scrollbar-thumb:hover, .image-stack::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+  }
+  .text-image-container, .image-stack{
+      scrollbar-width: thin;
+      scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  }
+
+  .text-content {
+      flex: 1;
+      padding: 0;
+      text-align: center;
+  }
+
+  .text-image-container img {
+      width: 12rem;
+      height: 12rem;
+      margin-bottom: 1rem;
+  }
+
+  .panda-path-images img {
+      width: 8rem;
+      height: 8rem;
+  }
+  .icon-column{
+      flex-direction: row;
+      gap: 1.5rem;
+      padding: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+      width: 40px;
+      height: 40px;
+      font-size: 1.5rem;
+  }
+  .profile-pic{
+      width: 100%;
+      height: auto;
+  }
+  .text-image-container img {
+      width: 10rem;
+      height: 10rem;
+  }
+  .panda-path-images img {
+      width: 6rem;
+      height: 6rem;
+  }
+  .icon-column{
+      gap: 1rem;
+  }
+}

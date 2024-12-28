@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/About.css';
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
+import { MdArrowBackIosNew } from "react-icons/md";
+import { Link } from 'gatsby'; // Make sure Gatsby Link is imported
+
 import KEV1 from '../images/KEV1.png';
 import KEV2 from '../images/KEV2.png';
 import KEV3 from '../images/KEV3.png';
@@ -68,6 +71,13 @@ function AboutMe() {
 
     return (
         <div className="page">
+            {/* Back Button at top-left */}
+            <div className="back-button">
+                <Link to="/">
+                    <MdArrowBackIosNew size={30} />
+                </Link>
+            </div>
+
             <div className="theme-switch-wrapper">
                 <label className="switch">
                     <input
@@ -114,7 +124,7 @@ function AboutMe() {
             <div className="rightPanel">
                 <div className="title">About Me</div>
                 <p>
-                    I'm Kevin, a software engineer with an insatiable drive for solving complex problems and pushing my limits.
+                    Hello World! I'm Kevin, a software engineer with an insatiable drive for solving complex problems and pushing my limits.
                     Currently a 3rd year CS/Business student at UBC. I love the thrill of taking on high-stake challenges that force me
                     to think creatively and stay agile - whether that’s work, coding, or my personal life.
                 </p>
