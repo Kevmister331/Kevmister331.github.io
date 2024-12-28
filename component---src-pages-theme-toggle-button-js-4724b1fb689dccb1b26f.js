@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[873],{5272:function(t,e,l){l.r(e);var o=l(7294);e.default=function(t){let{toggleTheme:e,theme:l}=t;return o.createElement("button",{className:"theme-toggle-button",onClick:e},"light"===l?"Switch to Dark Mode":"Switch to Light Mode")}}}]);
+//# sourceMappingURL=component---src-pages-theme-toggle-button-js-4724b1fb689dccb1b26f.js.map
