@@ -39,7 +39,7 @@ function Projects() {
                     <h2>This Website</h2>
                     <p className="brief-description">Personal Portfolio Project + Blog</p>
                     <br></br>
-                    <p>As a long time admirer of Naval - I've been influenced by his push for public creation. This inspired me to build a personal portoflio site to document my journey as a developer. I've also always wanted to create my own blog and write ideas online, so I used this as an opportunity to learn about integrating headless CMS into a Gatsby project through GraphQL queries!</p>
+                    <p>As a long time admirer of Naval - I've been influenced by his push for public creation. This inspired me to build a personal portoflio site to document my journey as a developer. I used this as an opportunity to learn about deploying a site via Gatsby and how it handles static site generation, customizing React components, and making everything mobile responsive.</p>
                     <br></br>
                     <ul className="tech-stack">
                         <li>Gatsby</li>

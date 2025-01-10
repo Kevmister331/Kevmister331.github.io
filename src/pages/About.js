@@ -124,16 +124,16 @@ function AboutMe() {
             <div className="rightPanel">
                 <div className="title">About Me</div>
                 <p>
-                    Hello World! I'm Kevin, a software engineer with an insatiable drive for solving complex problems and pushing my limits.
+                    Hello World! I'm Kevin, a software engineer that enjoys solving complex problems and pushing my limits.
                     Currently a 3rd year CS/Business student at UBC. I love the thrill of taking on high-stake challenges that force me
                     to think creatively and stay agile - whether that’s work, coding, or my personal life.
                 </p>
                 <p>
-                    I thrive in environments where chaos meets precision - where you have to make quick, data-driven decisions, but there’s room to experiment and innovate.
-                    I’m passionate about startups and the fast-paced tech world, always looking for the next opportunity to push boundaries and build impactful solutions.
+                    I thrive in environments where chaos meets precision. I am skilled at making data-driven decisions especially there’s room to experiment and innovate.
+                    I’m always looking for the next opportunity to push my boundaries and build impactful solutions.
                 </p>
                 <p>
-                    Outside of tech, I compete both on the basketball court and in NBA fantasy leagues, blending the adrenaline of live play with my passion for the NBA and its data-driven insights.
+                    Outside of tech, I love competing in NBA fantasy leagues and watching the sport, blending the adrenaline of live play with my favourite athletes and approaching the game from an analytical perspective.
                     I am also a world traveler, spending the last four months of my life studying abroad in Seoul and visiting Japan and Thailand.
                     One of my core values is living a well-balanced life, with travel being a key way I express myself and recharge both creatively and mentally.
                 </p>
