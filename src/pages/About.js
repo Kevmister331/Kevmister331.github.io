@@ -139,7 +139,6 @@ function AboutMe() {
                 </p>
                 <p>
                     If you’re looking for someone who doesn’t just want to “do the job,” but will challenge the status quo and build something better - let’s talk.
-                    Currently seeking 2025 summer internships in tech or business.
                 </p>
             </div>
         </div>

@@ -40,7 +40,7 @@ export default function Home() {
           <p>Kevin Hu</p>
         </div>
         <div className="header-right">
-          <p>Seeking Summer 2025 Internship</p>
+          <p></p>
           <span style={{ color: 'var(--link-hover-color)'}}>
           {/* Style will be inherited from the parent element */}
           <Typewriter

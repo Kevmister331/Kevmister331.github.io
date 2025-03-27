@@ -4,14 +4,30 @@ import atpco from '../images/atpco.png';
 import enerflex from '../images/enerflex.png';
 import csss from '../images/csss.png';
 import ubcea from '../images/ubcea.png';
+import sap from '../images/sap.png'
+import interninsider from '../images/interninsider.png'
 
 function Experience({ theme }) {  // Receive the 'theme' as a prop
   const experiences = [
     {
       title: "Software Engineer Intern",
+      company: "SAP",
+      duration: "Incoming Summer 2025",
+      description: "I will be heading over to SAP as an iXp Intern - Agile Developer, HANA and Analytics this summer :)",
+      logo: sap,
+    },
+    {
+      title: "Startup Engineer",
+      company: "Intern Insider",
+      duration: "Jan. 2025 - Apr. 2025",
+      description: "Dipped my feet into the startup world by joining my friend who founded Intern Insider, where I helped build web scrapers to populate a job board home to 8000+ active jobs. Gained hands-on exposure to the fast-paced startup environment, worked closely on the nitty-gritty of product development, and got the chance to network with Vancouver’s vibrant startup community.",
+      logo: interninsider,
+    },
+    {
+      title: "Software Engineer Intern",
       company: "ATPCO",
       duration: "Jan. 2024 - Aug. 2024",
-      description: "I started on the fare identification engine that processed airline data, and I contributed to a large project of replacing SQL with RocksDB which saved $180,000 in annual costs. For the second half of my internship, I worked on AWS Cloud systems, with a particular focus on leveraging AWS tools (S3, DynamoDB, EC2) to maintain airline data.",
+      description: "I started on the fare identification engine that processed airline data, and I contributed to a large project of replacing SQL with RocksDB which saved $180,000 in annual costs. For the second half of my internship, I worked on AWS Cloud systems, with a particular focus on leveraging AWS tools (S3, DynamoDB, EC2) to manage our ecosystem of microservices.",
       logo: atpco,
     },
     {

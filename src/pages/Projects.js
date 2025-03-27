@@ -13,10 +13,13 @@ import poker from '../images/poker.jpg';
 import poker1 from '../images/poker1.png';
 import quack1 from '../images/quack1.png';
 import quack2 from '../images/quack2.png';
+import nerve1 from '../images/nerve1.png';
+import nerve2 from '../images/nerve2.png';
+
 
 
 function Projects() {
-  const [selectedTab, setSelectedTab] = useState('This Website');
+  const [selectedTab, setSelectedTab] = useState('Nerve');
   const [theme, setTheme] = React.useState('light');
 
   const toggleTheme = () => {
@@ -32,6 +35,45 @@ function Projects() {
         Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
       </button>
     switch (selectedTab) {
+      case 'Nerve':
+      return (
+        <div className="text-image-container">
+          <div className="text-content">
+            <h2>Nerve</h2>
+            <p className="brief-description">Real-Time Dashboard for First Responders (Hackathon Winner)</p>
+            <br></br>
+            <p>
+              I teamed up with three other Kevins and together we built <strong>Nerve</strong>, a real-time command dashboard for monitoring first responders in the field. Nerve streams live video and audio data from mobile clients to HQ, performs sentiment analysis on transcripts, and summarizes ongoing events in real-time. It gives HQ a full 360° situational view when every decision matters.
+            </p>
+            <br></br>
+            <p>
+              This project won the <strong>Startup Award</strong> and placed <strong>2nd overall</strong> at UBC BizTech’s ProductX Hackathon. I got to dive deep into full-stack dev and work with live streaming, data ingestion, AI, and real-time sockets, all in under 24 hours.
+            </p>
+            <br></br>
+            <p>
+              <a href="https://devpost.com/software/nerve-1vlr0m">Devpost</a>
+            </p>
+            <br></br>
+            <ul className="tech-stack">
+              <li>Next.js</li>
+              <li>Express.js</li>
+              <li>React.js</li>
+              <li>TailwindCSS</li>
+              <li>Mapbox</li>
+              <li>Socket.IO</li>
+              <li>TensorFlow</li>
+              <li>AssemblyAI</li>
+              <li>OpenAI API</li>
+              <li>Supabase</li>
+              <li>ngrok</li>
+            </ul>
+          </div>
+          <div className="image-stack">
+            <img src={nerve1} alt="nerve dashboard" />
+            <img src={nerve2} alt="nerve demo gif or image" />
+          </div>
+        </div>
+      );
       case 'This Website':
         return (
             <div className="text-image-container">
@@ -60,7 +102,7 @@ function Projects() {
               <div className="text-image-container">
                   <div className="text-content">
                       <h2>Project Panini</h2>
-                      <p className="brief-description">nwHacks 2023 hackathon with Dylan Lau, Nathan Lee, Mason Suen</p>
+                      <p className="brief-description">nwHacks 2023 Hackathon</p>
                       <br></br>
                       <p>While brainstorming ideas for a hackathon... we thought why not make an idea generator in itself! From there, we built a full-stack application with React that implements GPT-3's NLP model to generate project ideas based on personal interests for fellow programmers like me. We utilized user inputs to parse JSON responses from the OpenAI API calls.</p>
                       <br></br>
@@ -82,7 +124,7 @@ function Projects() {
             <div className="text-image-container">
                 <div className="text-content">
                     <h2>Panda Path</h2>
-                    <p className="brief-description">SFU Stormhacks 2023 hackathon with Aurora Cheng, Janaye Cheong, Dylan Lau</p>
+                    <p className="brief-description">SFU Stormhacks 2023 Hackathon</p>
                     <br></br>
                     <p>Panda Path was built on React Native as a mobile app to generate safe walking routes based on government crime data. JavaScript was used along with the Google Maps Platform API for app functionality, like route generation and time calculations. We built a secure back-end REST API in Express.js, connecting the application to a MongoDB database for user profiles protected by bcrypt encryption and JWT for password security.</p>
                     <br></br>
@@ -175,14 +217,17 @@ function Projects() {
   return (
     <div className="tabbed-interface">
       <div className="tabs">
+        <div className={selectedTab === 'Nerve' ? 'active-tab' : ''} onClick={() => setSelectedTab('Nerve')}>
+          Nerve
+        </div>
+        <div className={selectedTab === 'Panda Path' ? 'active-tab' : ''} onClick={() => setSelectedTab('Panda Path')}>
+          Panda Path
+        </div>
         <div className={selectedTab === 'This Website' ? 'active-tab' : ''} onClick={() => setSelectedTab('This Website')}>
           This Website
         </div>
         <div className={selectedTab === 'Project Panini' ? 'active-tab' : ''} onClick={() => setSelectedTab('Project Panini')}>
           Project Panini
-        </div>
-        <div className={selectedTab === 'Panda Path' ? 'active-tab' : ''} onClick={() => setSelectedTab('Panda Path')}>
-          Panda Path
         </div>
         <div className={selectedTab === 'LinkedIn Clone' ? 'active-tab' : ''} onClick={() => setSelectedTab('LinkedIn Clone')}>
           LinkedIn Clone

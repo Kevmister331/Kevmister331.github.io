@@ -247,8 +247,9 @@ a:hover {
 .tech-stack li {
     display: inline-block;
     margin-right: 1rem;
+    margin-bottom: 0.5rem;  /* Add vertical spacing between rows */
     background-color: var(--background-hover);
-    padding: 0.2rem 0.5rem;
+    padding: 0.4rem 0.8rem;  /* Increase padding within each pill */
     border-radius: 5px;
 }
 
