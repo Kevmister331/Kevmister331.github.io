@@ -4,6 +4,7 @@ import kevmain from '../images/kevmain.jpg';
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail, AiFillHome, AiOutlineArrowLeft } from "react-icons/ai";
 import Projects from './Projects';
 import Experience from './Experience';
+import CommunityExperience from './CommunityExperience';
 import { Link } from 'gatsby';
 import { Typewriter } from 'react-simple-typewriter'
 import { pdf } from '../images/Public Resume.pdf';
@@ -65,7 +66,9 @@ export default function Home() {
           <nav>
             <ul>
               <li><Link to="/About">About Me</Link></li>
-              {/* <li><a href = {pdf} target = "_blank">Resume</a></li> */}
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#work-experience">Work Experience</a></li>
+              <li><a href="#community-involvement">Community Involvement</a></li>
               {/* <li><Link to="/About">Life Ideas</Link></li> */}
           </ul>
           </nav>
@@ -96,16 +99,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="projects">
+      <section className="projects" id="projects">
         <p style={{fontSize: '2rem'}}>Projects</p>
         <div className="vertical-line2"></div>
         <Projects />
       </section>
 
-      <section className="experience">
-        <p style={{fontSize: '2rem'}}>Experience</p>
+      <section className="experience" id="work-experience">
+        <p style={{fontSize: '2rem'}}>Work Experience</p>
         <div className="vertical-line2"></div>
         <Experience theme={theme} />
+      </section>
+
+      <section className="experience" id="community-involvement">
+        <p style={{fontSize: '2rem'}}>Community Involvement</p>
+        <div className="vertical-line2"></div>
+        <CommunityExperience theme={theme} />
       </section>
 
     </div>

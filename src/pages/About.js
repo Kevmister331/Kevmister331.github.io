@@ -90,6 +90,7 @@ function AboutMe() {
             </div>
 
             <div className="leftPanel">
+                <div>
                 <div className="imagePanel">
                     <img src={images[currentImageIndex]} alt="Profile" className="profile-pic" />
                     <div className="arrows">
@@ -100,6 +101,7 @@ function AboutMe() {
                             &gt;
                         </button>
                     </div>
+                </div>
                 </div>
 
                 <div className="iconList">
@@ -124,21 +126,17 @@ function AboutMe() {
             <div className="rightPanel">
                 <div className="title">About Me</div>
                 <p>
-                    Hello World! I'm Kevin, a software engineer that enjoys solving complex problems and pushing my limits.
-                    Currently a 3rd year CS/Business student at UBC. I love the thrill of taking on high-stake challenges that force me
-                    to think creatively and stay agile - whether that’s work, coding, or my personal life.
+                    Hello and thank you for visiting my portfolio. I'm Kevin, a software engineer who is chasing meaningful growth. I'm entering my 4th year of Computer Science + Business at UBC.
                 </p>
                 <p>
-                    I thrive in environments where chaos meets precision. I am skilled at making data-driven decisions especially there’s room to experiment and innovate.
-                    I’m always looking for the next opportunity to push my boundaries and build impactful solutions.
+                I'm naturally curious and grounded in the belief that success comes from staying hungry, especially in failure. I like to keep things interesting by saying yes to bold ideas, taking ownership, and chasing opportunities that help me level up. 
+                But most importantly, I care deeply about being a strong communicator and teammate. Some of the best work I’ve done came from honest conversations, shared wins, and figuring things out together in the messy middle.
                 </p>
                 <p>
-                    Outside of tech, I love competing in NBA fantasy leagues and watching the sport, blending the adrenaline of live play with my favourite athletes and approaching the game from an analytical perspective.
-                    I am also a world traveler, spending the last four months of my life studying abroad in Seoul and visiting Japan and Thailand.
-                    One of my core values is living a well-balanced life, with travel being a key way I express myself and recharge both creatively and mentally.
+                Outside of work, you’ll find me deep in NBA fantasy analytics, traveling the world, or reflecting on how to live an exciting life. Studying abroad in Seoul and traveling abroad opened my eyes to new perspectives — and confirmed that exploration is core to how I grow, recharge, and find meaning.
                 </p>
                 <p>
-                    If you’re looking for someone who doesn’t just want to “do the job,” but will challenge the status quo and build something better - let’s talk.
+                If you’re looking for someone who’s not just here to “do the job” but to challenge, build, and bring energy into any team — let’s connect.
                 </p>
             </div>
         </div>

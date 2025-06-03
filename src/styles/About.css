@@ -36,7 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Align to top on desktop */
-  min-height: 0;
+  min-height: 18rem;
   max-width: 350px;
 }
 
@@ -57,6 +57,7 @@ body {
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 20px;
+  display: block;
 }
 
 .imagePanel {
@@ -65,29 +66,49 @@ body {
   max-width: 300px;
   height: auto;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 .arrows {
   position: absolute;
   top: 50%;
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .arrow {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  padding: 0.5rem;
-  font-size: 1.5rem;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  appearance: none;
+  color: #4b1ccd;
+  font-size: 2.2rem;
   cursor: pointer;
-  z-index: 1;
+  transition: color 0.2s, transform 0.2s;
+  outline: none;
+  pointer-events: auto;
+  width: auto;
+  height: auto;
+  padding: 0;
+  min-width: 0;
+  min-height: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.arrow:hover {
-  transform: scale(1.2);
+.arrow:hover, .arrow:focus {
+  color: #B95117;
+  background: none !important;
+  transform: scale(1.15);
 }
 
 .iconList {
@@ -97,6 +118,7 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
+  min-height: 50px;
 }
 
 .icon {

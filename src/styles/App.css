@@ -167,6 +167,11 @@ nav a:hover {
 .projects {
   margin-top: 3rem;
   width: 100%;
+  margin-bottom: 3.5rem; /* Added more space below projects section */
+}
+
+.experience {
+  margin-top: 0;
 }
 
 .project {
@@ -379,6 +384,10 @@ input:checked + .slider:before {
     right: 1rem; /* Closer to the edge */
     top: 1rem;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
