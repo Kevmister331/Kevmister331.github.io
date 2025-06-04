@@ -27,7 +27,7 @@ function Experience({ theme }) {  // Receive the 'theme' as a prop
       title: "Software Engineer Intern",
       company: "ATPCO",
       duration: "Jan. 2024 - Aug. 2024",
-      description: "I started on the fare identification engine that processed airline data, and I contributed to a large project of replacing SQL with RocksDB which saved $180,000 in annual costs. For the second half of my internship, I worked on AWS Cloud systems, with a particular focus on leveraging AWS tools (S3, DynamoDB, EC2) to manage our microservice architecture.",
+      description: "I started on the fare identification engine that processed airline data, and I contributed to a large project of replacing SQL with RocksDB. For the second half of my internship, I worked on AWS Cloud systems, with a particular focus on leveraging AWS tools (S3, DynamoDB, EC2) to manage our microservice architecture.",
       logo: atpco,
     },
     {

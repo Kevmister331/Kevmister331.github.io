@@ -7,7 +7,7 @@ import Experience from './Experience';
 import CommunityExperience from './CommunityExperience';
 import { Link } from 'gatsby';
 import { Typewriter } from 'react-simple-typewriter'
-import { pdf } from '../images/Public Resume.pdf';
+import resume from '../images/Kevin Hu Resume.pdf';
 
 
 
@@ -66,9 +66,8 @@ export default function Home() {
           <nav>
             <ul>
               <li><Link to="/About">About Me</Link></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#work-experience">Work Experience</a></li>
-              <li><a href="#community-involvement">Community Involvement</a></li>
+              <li><a href="#work-experience">Experience</a></li>
+              <li><a href="/Resume" rel="noopener noreferrer">Resume</a></li>
               {/* <li><Link to="/About">Life Ideas</Link></li> */}
           </ul>
           </nav>
