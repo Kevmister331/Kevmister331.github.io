@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[903],{5503:function(e,t,r){t.Z=r.p+"static/Kevin Hu Resume-248190894cc361ed8f850c10cd0156e7.pdf"},1325:function(e,t,r){r.r(t);var s=r(7294),l=r(5503);t.default=()=>s.createElement("div",{style:{width:"100%",height:"100vh"}},s.createElement("iframe",{src:l.Z,style:{width:"100%",height:"100%",border:"none"},title:"Resume"}))}}]);
+//# sourceMappingURL=component---src-pages-resume-js-04c214432d80f09a59e3.js.map
