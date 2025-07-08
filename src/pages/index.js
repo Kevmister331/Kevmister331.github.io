@@ -67,7 +67,7 @@ export default function Home() {
             <ul>
               <li><Link to="/About">About Me</Link></li>
               <li><a href="#work-experience">Experience</a></li>
-              <li><a href="/Resume" rel="noopener noreferrer">Resume</a></li>
+              {/* <li><a href="/Resume" rel="noopener noreferrer">Resume</a></li> */}
               {/* <li><Link to="/About">Life Ideas</Link></li> */}
           </ul>
           </nav>
